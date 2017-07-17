@@ -1,0 +1,93 @@
+// BASE
+// ----
+
+body
+  color: $primary-color
+
+/* CUSTOMIZE THE CAROUSEL -------------------------------------------------- */
+
+.owl-carousel
+	float: left
+	text-align: center
+	.owl-stage-outer
+		.owl-stage
+			.owl-item
+				&.active
+				    margin-right: 10px !important
+				.item
+					margin: 0 15% 20px
+
+#errorMessage,
+#successMessage
+	display: none
+	font-size: 1.5em
+	color: #ff0b0b
+	border: 1px solid
+	margin-top: 2em
+	padding: 1em
+#successMessage
+	color: #337ab7
+	font-size: 2em
+	margin-top: 1.3em
+
+blockquote
+	margin: 1.5em 10px
+	padding: 0.5em 10px
+	quotes: "\201C""\201D""\2018""\2019"
+	position: relative
+	border: none !important
+	font-size: 14px !important
+
+	&:before
+		color: #ccc
+		content: open-quote
+		font-size: 2em
+		line-height: 0.1em
+		margin-right: 0em
+		vertical-align: -0.4em
+		content: "\201C"
+		font-family: Georgia, serif
+	&:after
+		color: #ccc
+		content: open-quote
+		font-size: 2em
+		line-height: 0.1em
+		margin-right: 0em
+		vertical-align: -0.4em
+		content: "\201D"
+		font-family: Georgia, serif
+
+		p
+  			display: inline
+
+.blockq
+	content: "\201C"
+	font-size: 50px
+	line-height: 1em
+	font-family: Georgia,serif
+	font-weight: 800
+	color: #199DA5
+	float: left
+	text-align: center
+	width: 100%
+	margin-top: .5em
+
+@keyframes bounce
+  0%,
+  100%,
+  20%,
+  50%,
+  80% 
+    -webkit-transform: translateY(0)
+    -ms-transform: translateY(0)
+    transform: translateY(0)
+  
+  40% 
+    -webkit-transform: translateY(-10px)
+    -ms-transform: translateY(-10px)
+    transform: translateY(-10px)
+  
+  60% 
+    -webkit-transform: translateY(-5px)
+    -ms-transform: translateY(-5px)
+    transform: translateY(-5px)

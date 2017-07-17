@@ -1,0 +1,19 @@
+{
+  "name": "Vusi Unomena Test",
+  "authors": [
+    "Vusi Mtwayi <vusi.mtwayi@gmail.com>"
+  ],
+  "description": "Vusi Bootstrap SASS with jQuery dependencies",
+  "main": "bower.json",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.6"
+  }
+}

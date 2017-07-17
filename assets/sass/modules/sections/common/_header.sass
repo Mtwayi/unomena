@@ -1,0 +1,73 @@
+// header.header
+//     background: $white-color
+
+/* CUSTOMIZE THE NAVBAR -------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper
+  position: absolute
+  top: 0
+  right: 0
+  left: 0
+  z-index: 20
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper 
+	.container 
+	  padding-right: 0
+	  padding-left: 0
+
+.navbar-wrapper 
+	.navbar 
+	  padding-right: 15px
+	  padding-left: 15px
+
+.navbar-wrapper 
+	.navbar-inverse
+		border-color: transparent
+		.navbar-nav 
+			li 
+				a
+					font-family: 'Montserrat', sans-serif
+					font:
+						weight: 500
+						size: 12px
+					color: $white-color
+					text-transform: uppercase
+					&:hover, &:focus
+			 			color: $black-color
+		    			background-color: transparent
+				&.active
+					a
+			 			color: $black-color
+			 			background-color: transparent
+
+@media (min-width: 768px)
+  	/* Navbar positioning foo */
+  	.navbar-wrapper
+    	margin-top: 40px
+    	.navbar 
+			.wrapper
+	  			width: auto !important
+	  			.navbar-header
+	  				float: left
+	  			.navbar-collapse
+	  				float: right
+
+  	.navbar-wrapper 
+  		.wrapper
+		    padding-right: 15px
+		    padding-left: 15px
+
+  	.navbar-wrapper 
+  		.navbar-inverse
+  			background-color: transparent
+    		border-color: transparent
+		    padding-right: 0
+		    padding-left: 0
+
+
+  	/* The navbar becomes detached from the top, so we round the corners */
+  	.navbar-wrapper 
+  		.navbar
+    		border-radius: 4px
